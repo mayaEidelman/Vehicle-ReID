@@ -1,0 +1,10 @@
+path: /home/labs/training/class46/Aerial-IR-REID/yolov8/datasets/zenodo/
+train: 'images/train'
+val: 'images/valid'
+test: 'images/test'
+ 
+# Classes
+names:
+  0: car
+  1: bus
+  2: truck
