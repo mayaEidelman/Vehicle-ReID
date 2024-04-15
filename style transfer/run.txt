@@ -1,0 +1,1 @@
+python ../test.py --config configs/wikiart_tv_0.6.yaml --model_path ../preTraindModel/wikiart_tv_0.6.ckpt.pth.tar
