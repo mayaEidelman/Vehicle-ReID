@@ -1,0 +1,22 @@
+_BASE_: ../Base-dino.yml
+
+INPUT:
+  SIZE_TRAIN: [70, 70]
+  SIZE_TEST: [70, 70]
+
+  AUTOAUG:
+    ENABLED: True
+    PROB: 0.1
+
+MODEL:
+  BACKBONE:
+    WITH_IBN: True
+    WITH_NL: True
+
+
+DATASETS:
+  NAMES: ("VeRiUAV",)
+  TESTS: ("VeRiUAV",)
+
+
+OUTPUT_DIR: logs/VeRi-UAV-base-dino-orig6

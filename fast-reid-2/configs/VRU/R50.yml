@@ -1,0 +1,20 @@
+_BASE_: ../Base.yml
+
+INPUT:
+  SIZE_TRAIN: [64, 64]
+  SIZE_TEST: [64, 64]
+
+  AUTOAUG:
+    ENABLED: True
+    PROB: 0.1
+
+MODEL:
+  BACKBONE:
+    WITH_IBN: True
+    WITH_NL: True
+
+DATASETS:
+  NAMES: ("VRU",)
+  TESTS: ("SmallVRU", "MediumVRU", "LargeVRU",)
+
+OUTPUT_DIR: logs/VRUTEMP
